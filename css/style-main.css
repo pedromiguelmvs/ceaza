@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Inter;
+   overflow-x: hidden;
+}
+body {
+    background-image: linear-gradient(to bottom, #00121E, #002239);
+    
+}
+.main {
+    padding: 60px;
+    text-align: center;
+}
+.up-content .main-logo img {
+    width: 30%;
+    margin-bottom: 4rem;
+}
+.intro-text {
+    margin: 0 auto;
+    width: 40%;
+}
+.intro-text a button {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+h1 {
+    color: white;
+    font-size: 40px;
+    width: auto;
+    font-weight: 100;
+}
+button {
+    background-image: linear-gradient(to bottom, #0091F5, #005895);
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    width: 200px;
+}
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+.info-box {
+    background: #000F18;
+    width: 20%;
+    font-size: 20px;
+    padding: 1.2em;
+    border-radius: 30px;
+    padding: 40px;
+    height: 18rem;
+    line-height: 30px;
+}
+.info-box img{
+    margin-bottom: 1.5em;
+    width: 3.3em;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+    .info-box {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 3em;
+    }
+}
+@media screen and (max-width: 620px) {
+    .info-boxes {
+        padding-right: 50%;
+    }
+    .main {
+        padding: 20px;
+        text-align: center;
+    }
+    .info-box {
+        height: 15em;
+    }
+    .intro-text {
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
