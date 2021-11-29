@@ -64,21 +64,14 @@ button {
 .btn-try-now {
     cursor: pointer;
 }
-/* 
+
 @media screen and (max-width: 1500px) {
     .info-boxes {
+        display: flex;
         flex-direction: column;
     }
-    .info-box {
-        width: 90%;
-        height: 200px;
-        margin-bottom: 3em;
-    }
-} */
+}
 @media screen and (max-width: 620px) {
-    .info-boxes {
-        padding-right: 50%;
-    }
     .main {
         padding: 20px;
         text-align: center;
