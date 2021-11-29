@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <aside>
+        <img src="../assets/c.svg" alt="ceaza">
+        <section class="menu-group">
+            <a href="/paineis" class="selected">
+                <img src="../assets/config.svg" alt="projetos">
+            </a>
+            <a href="/equipe">
+                <img src="../assets/team.svg" alt="equipe">
+            </a>
+        </section>
+        <div></div>
+    </aside>
+    <section class="dashboard">
+        <div class="head">
+            <img src="../assets/hello.svg" alt="ola">
+            <p><b>Bem-vindo ao dashboard, usuário.</b></p>
+        </div>
+        <header>
+            <h1>Otimize seus <strong><u>projetos</u></strong>!</h1>
+            <button name="create">Criar Projeto</button>
+        </header>
+        <form class="form" name="form">
+            <div>
+                <label>Título</label>
+                <input type="text" name="title">
+            </div>
+
+            <div>
+                <label>Descrição</label>
+                <input type="text" name="description">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <ul class="cards">
+            <section class="empty">
+                <img src="../assets/empty.svg" alt="vazio">
+                <p>Parece que você não tem nenhuma postagem.</p>
+            </section>
+        </ul>
+    </section>
+</body>
+<footer>
+    <script src="../js/projetos.js"></script>
+</footer>
+</html>

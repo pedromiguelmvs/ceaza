@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #002239;
+    display: grid;
+    grid-template-areas:
+    "side-menu header";
+    grid-template-columns: auto 90%;
+    justify-content: flex-start;
+}
+
+aside {
+    grid-area: side-menu;
+    height: 100vh;
+    width: 90px;
+    background: #000F18;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside img {
+    padding: 15px;
+}
+
+section.menu-group {
+    width: 100%;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.selected {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-right: 5px solid #0091F5;
+}
+
+.selected:hover {
+    background: rgba(226, 226, 226, 0.2);
+    transition: .2s;
+}
+
+.dashboard {
+    grid-area: header;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+header {
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+strong u {
+    color: #0091F5;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(#0091F5, #005895);
+    border: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    max-width: 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    gap: 20px;
+}
+
+.card {
+    min-width: 300px;
+    width: auto;
+    background: #000F18;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    cursor: pointer;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+section .empty {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.39);
+}
